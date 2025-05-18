@@ -5,12 +5,17 @@ nav {
 
 nav a {
     color: white;
-    display: block;
+    display: inline-block;
     padding: 20px;
 }
 
 h1 {
     color: darkblue;
+    padding-left: 20px;
+}
+
+h2 {
+    padding-left: 20px;
 }
 
 img {
@@ -18,9 +23,20 @@ img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box_shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px gray;
+    margin-left: 20px;
+    /* 👈 Adds space to the left */
 }
 
-p{
+p {
     padding: 10px;
+}
+
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
 }
