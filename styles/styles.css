@@ -1,14 +1,22 @@
+/* Navigation bar */
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 
+/* Navigation bar */
+nav {
+    background-color: darkblue;
+    padding: 10px 20px;
+}
+
 nav a {
     color: white;
     display: inline-block;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
+/* Headings */
 h1 {
     color: darkblue;
     padding-left: 20px;
@@ -18,25 +26,56 @@ h2 {
     padding-left: 20px;
 }
 
-img {
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 0;
+    padding: 20px 40px;
+    /* Padding only inside, not centered */
+    text-align: left;
+}
+
+/* Profile image inside <main> */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin-left: 20px;
-    /* 👈 Adds space to the left */
+    margin: 10px 0 10px 20px;
+    float: left;
 }
 
+/* Paragraphs (keep padding as required) */
 p {
-    padding: 10px;
+    padding: 0;
+    margin: 10px 0 20px 0;
 }
 
+/* Aside container */
 aside {
     width: 300px;
-    margin: 20px;
+    margin: 40px 0 20px 40px;
     border: 1px solid #ccc;
     padding: 15px;
     background-color: #f9f9f9;
     color: #333;
+    float: right;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    clear: both;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
 }
