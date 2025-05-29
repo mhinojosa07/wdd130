@@ -1,41 +1,59 @@
-/* Main: constrain width and center content */
+/* Body Reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Defaults */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Container Styling */
 main {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* main img: profile image sizing within main */
+/* Profile Image Styling */
 main img {
     width: 150px;
     height: auto;
-    display: block;
-    margin-bottom: 1em;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+
 }
 
-/* p: reset default paragraph padding */
+/* Paragraph Reset */
 p {
     padding: 0;
 }
 
-/* nav: style navigation container */
+/* Navigation Bar Styling */
 nav {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
+    background-color: #007BFF;
+    padding: 0.5rem;
 }
 
-/* nav a: style navigation links */
+/* Navigation Link Styling */
 nav a {
     margin-right: 1rem;
     text-decoration: none;
     font-weight: bold;
+    color: #fff;
 }
 
-/* h1: style main heading */
+/* Heading Styling */
 h1 {
     font-size: 2rem;
     margin-bottom: 0.5em;
+    padding-left: 1rem;
 }
 
-/* aside: style sidebar content with dimensions and appearance */
+/* Sidebar Styling */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -46,7 +64,7 @@ aside {
     text-align: center;
 }
 
-/* aside img: ensure sidebar image maintains aspect ratio */
+/* Sidebar Image Styling */
 aside img {
     width: 200px;
     height: auto;
@@ -54,9 +72,10 @@ aside img {
     margin: 0 auto 0.5em;
 }
 
-/* footer: separate from content, add top border and center text */
+/* Footer Styling */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding-top: 0.5em;   }
+    padding-top: 0.5em;
+}
