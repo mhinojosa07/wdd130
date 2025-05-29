@@ -1,10 +1,10 @@
-/* constrain and center the main content */
+/* Main: constrain width and center content */
 main {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* scope profile image so aside img won’t inherit */
+/* main img: profile image sizing within main */
 main img {
     width: 150px;
     height: auto;
@@ -12,12 +12,30 @@ main img {
     margin-bottom: 1em;
 }
 
-/* reset all paragraph padding */
+/* p: reset default paragraph padding */
 p {
     padding: 0;
 }
 
-/* styled aside per spec */
+/* nav: style navigation container */
+nav {
+    margin: 1rem 0;
+}
+
+/* nav a: style navigation links */
+nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* h1: style main heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+/* aside: style sidebar content with dimensions and appearance */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -28,7 +46,7 @@ aside {
     text-align: center;
 }
 
-/* preserve aspect ratio of aside image */
+/* aside img: ensure sidebar image maintains aspect ratio */
 aside img {
     width: 200px;
     height: auto;
@@ -36,9 +54,9 @@ aside img {
     margin: 0 auto 0.5em;
 }
 
-/* footer separation, subtle border, and center text */
+/* footer: separate from content, add top border and center text */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding-top: 0.5em; }
+    padding-top: 0.5em;   }
