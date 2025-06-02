@@ -1,28 +1,19 @@
-/* wwr/styles/rafting.css */
-
-/* 1. CSS Variables */
 :root {
     --primary-color: #405595;
-    /* deep navy river */
     --secondary-color: #88BDBC;
-    /* teal water */
-    --accent1-color: #0d4d7bc7;
-    /* oar wood */
-    --accent2-color: #ffffff;
-    /* light sand */
+    --accent1-color: #0D4D7BC7;
+    --accent2-color: #FFFFFF;
 
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
 
-/* 2. Reset box-model properties for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 3. Body text styling */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -30,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* 4. Center header, main, and footer at fixed width */
 header,
 main,
 footer {
@@ -38,14 +28,12 @@ footer {
     margin: 0 auto;
 }
 
-/* 5. Headings styling */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* 6. Basic margin and padding for nav, p, section, and article */
 nav,
 p,
 section,
@@ -54,18 +42,15 @@ article {
     padding: 8px;
 }
 
-/* 7. Remove underlines from social media image links */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* 8. Header background and text color */
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
-/* 9. Navigation bar styling */
 nav {
     display: flex;
     align-items: center;
@@ -87,23 +72,20 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* 10. Hero container positioning (full-width) */
 .hero {
     position: relative;
-    width: 100%;
-    /* span entire viewport */
-    margin-bottom: 32px;
-    /* space before <main> content */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* 11. Hero image full width */
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* 12. Overlay heading on hero */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -117,7 +99,6 @@ nav a:hover {
     z-index: 1;
 }
 
-/* 13. Overlay article on hero */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -129,7 +110,6 @@ nav a:hover {
     z-index: 1;
 }
 
-/* 14. Image inside hero article floats right */
 .hero article img {
     float: right;
     width: 125px;
@@ -138,7 +118,6 @@ nav a:hover {
     border-radius: 4px;
 }
 
-/* 15. Section styling */
 section {
     background-color: #fff;
     border-radius: 4px;
@@ -152,7 +131,6 @@ section p {
     margin-bottom: 16px;
 }
 
-/* 16. “Adventure Awaits You!” images layout */
 .av-images {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +144,6 @@ section p {
     border-radius: 4px;
 }
 
-/* 17. Footer styling */
 footer {
     background-color: var(--primary-color);
     text-align: center;
@@ -175,7 +152,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* 18. Social media icons in footer */
 footer .socialmedia {
     margin-top: 8px;
 }
