@@ -1,29 +1,42 @@
-body {
+/* === Global Reset === */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f8ff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* === Base Styles === */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Header (Grid Layout) === */
 header {
-    background: #2b75f3;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* logo + nav */
     align-items: center;
-    padding: 1rem 0 0.5rem 0;
+    background: #2b75f3;
+    padding: 1rem 2rem;
 }
 
 .logo {
-    width: 100px;
-    margin-bottom: 0.5rem;
+    width: 120px;
+    justify-self: start;
+    margin: 0;
+}
+
+nav {
+    justify-self: end;
 }
 
 .menu {
     display: flex;
     gap: 2rem;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
 }
 
 .menu li a {
@@ -41,10 +54,10 @@ header {
     background: #ece6ff;
 }
 
-/* HERO */
+/* === Hero Section === */
 .hero {
     text-align: center;
-    padding: 2rem 0 1.5rem 0;
+    padding: 2rem 0 1.5rem;
 }
 
 .hero h1 {
@@ -76,10 +89,10 @@ header {
     border-radius: 8px;
 }
 
-/* HISTORY */
+/* === History Section === */
 .history {
     background: #f5f5fc;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 1rem;
     padding: 1.5rem 0;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(120, 120, 160, 0.06);
@@ -108,10 +121,10 @@ header {
     justify-self: center;
 }
 
-/* ADVENTURE */
+/* === Adventure Section === */
 .adventure {
     background: #fff;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 1rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(120, 120, 160, 0.04);
@@ -126,7 +139,7 @@ header {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
 }
 
 .adventure-row figure {
@@ -155,12 +168,12 @@ header {
     font-size: 0.95rem;
 }
 
-/* FOOTER */
+/* === Footer === */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2b75f3;    
+    background: #2b75f3;
     color: #333;
     padding: 1rem 2rem;
     border-top: 1px solid #b1a3e2;
@@ -186,6 +199,7 @@ footer {
     filter: brightness(0.7) invert(0.7);
 }
 
+/* === Responsive Breakpoints === */
 @media (max-width: 850px) {
 
     .hero-content,
