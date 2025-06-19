@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Whitewater Rafting Company</title>
+    <meta name="description"
+        content="Welcome to Whitewater Rafting Company—join our adventures, sign up for our newsletter, and explore our trips.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- Header (Grid: Logo, Title, Nav) -->
+    <header>
+        <img src="images/wwr-logo.png" alt="Whitewater Rafting Company Logo" class="logo">
+        <h1>Whitewater Rafting Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Full-Width Hero with Absolute Overlay -->
+    <section class="home-hero">
+        <div class="hero-container">
+            <img src="images/hero-home.jpg" alt="Rafting the rapids" class="hero-image">
+            <h2 class="hero-title">Life is a journey, not a destination</h2>
+            <a href="trips.html" class="hero-btn">Explore Our Trips</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Sign-Up -->
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <form class="newsletter-form" action="#" method="post">
+            <div class="form-row">
+                <label for="newsletter-name">Your Name</label>
+                <input type="text" id="newsletter-name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="newsletter-email">Your Email</label>
+                <input type="email" id="newsletter-email" name="email" required>
+            </div>
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="images/feature1.jpg" alt="Expert guides" class="feature-img">
+                <h3>Expert Guides</h3>
+                <p>Our guides know every rapid and safety protocol inside and out.</p>
+            </div>
+            <div class="feature">
+                <img src="images/feature2.jpg" alt="Top-notch equipment" class="feature-img">
+                <h3>Top-Notch Equipment</h3>
+                <p>We provide the latest, most reliable boats and safety gear.</p>
+            </div>
+            <div class="feature">
+                <img src="images/feature3.jpg" alt="Scenic rivers" class="feature-img">
+                <h3>Scenic Rivers</h3>
+                <p>Float through breathtaking canyons and unforgettable waterways.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Previews -->
+    <section class="trip-preview">
+        <h2>Featured Trips</h2>
+        <div class="trip-grid">
+            <div class="trip-card">
+                <img src="images/trip1.jpg" alt="Big Mallard">
+                <h3>Big Mallard</h3>
+                <a href="trips.html" class="btn-small">Learn More</a>
+            </div>
+            <div class="trip-card">
+                <img src="images/trip2.jpg" alt="Half Day Adventure">
+                <h3>Half Day Adventure</h3>
+                <a href="trips.html" class="btn-small">Learn More</a>
+            </div>
+            <div class="trip-card">
+                <img src="images/trip3.jpg" alt="Sunset Rapids">
+                <h3>Sunset Rapids</h3>
+                <a href="trips.html" class="btn-small">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting Company | Your Name</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
